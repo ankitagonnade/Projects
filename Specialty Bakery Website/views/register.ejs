@@ -1,0 +1,70 @@
+
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/validate.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/validate.js"></script>
+
+</head>
+
+
+
+<div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6"> 
+
+      <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Sign Up</h5>
+    
+
+<form action="/register" method="post" id="signup-form" class="signup-form">
+
+
+<div class="form-group">
+<label for="username">Username:</label>
+<input type="text" class="form-label" name="username" id="username" placeholder="User Name" value="" required/>
+</div>
+
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="text" class="form-label" name="email" id="email" placeholder="Your Email" value="" required/>
+</div>
+
+<div class="form-group">
+<label for="email">Password:</label>
+<input type="password" class="form-input" name="password" id="password" placeholder="Password" value="" required/> 
+</div>
+
+
+
+
+
+<div class="form-group">
+<button type="submit" name="submit" id="submit" class="btn btn-warning" value="Sign up" />Sign up
+</div>
+
+
+</form>
+
+
+
+<p class="loginhere">
+Have already an account ? <a href="/login" class="loginhere-link">Login here</a></p>
+<button type="button" class="btn btn-warning  mb-4"><a href="/">Home</a>
+
+
+
+</div></div>
+</div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,45 @@
+<%- include ('partials/header') %>
+<div class="container">
+<h1> Edit Product Details</h1>
+
+<form action="/update?id=<%= results._id%>"  enctype="multipart/form-data" method="POST" >
+
+<div class="form-group">
+	<input type="text" name="Name" class="form-control" value = "<%=results.Name%>" placeholder="name">
+</div>
+ <div class="form-group">
+	<input type="text" name="category" class="form-control" value = "<%=results.Category%>" placeholder="category">
+</div>
+<div class="form-group">
+	<input type="text" name="Price" class="form-control" value = "<%=results.Price%>" placeholder="Price">
+</div>
+
+<div class="form-group">
+	<input type="text" name="quantity" class="form-control" value = "<%=results.qty%>" placeholder="Quantity">
+</div>
+
+<div class="form-group">
+	<input type="text" name="flag" class="form-control" value = "<%=results.flag%>" placeholder="Available product for user">
+</div>
+<div class="form-group">
+	<input type="text" name="image" class="form-control" value = "<%=results.image%>" placeholder="image name">
+</div>
+<div class="form-group">
+<input type="file" name="product"/> <br>
+</div>
+
+ <div class="form-group">
+	<textarea name="description" class="form-control" value = "<%=results.description%>" placeholder="description"></textarea>
+</div>
+<div class="form-group">
+	<button type="submit" class="btn btn-info" >Save</button>
+</div>
+
+
+</form>
+ 
+<a href="/">Cancel</a>
+
+</div>
+
+<%- include ('partials/footer') %>
